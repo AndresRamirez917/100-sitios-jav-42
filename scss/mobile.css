@@ -39,11 +39,20 @@
 
 #services .services-row {
   display: block;
+  width: 50%;
+  margin: 0 auto;
 }
 #services .services-row .box {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 10px;
+}
+#services .services-row .cajita img {
+  margin-bottom: 1rem;
+}
+#services .services-row .cajita .cajita-text {
+  margin-top: -300px;
+  padding: 3rem 0 3rem 0;
 }
 
 #about .about-row {

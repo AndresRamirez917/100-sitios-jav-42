@@ -60,22 +60,26 @@ const emailValido = (email) => {
 async function get1Data() {
     const result = await fetch('https://randomuser.me/api?results=3');
     const ranUser = await result.json();
+    const cajitaTitle = ["DOUBLE ROOM", "DELUXE ROOM", "HONEYMOON ROOM"];
     console.log(ranUser)
     ranUser.results.forEach(element => {
-        const img = document.createRange().createContextualFragment(`
-            
-          <div class="cajita">
-            <img src="${element.picture.large}" alt="">
-            <div class="cajita-text">
-                <h2>HONEYMOON ROOM</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sed sunt hic quas eum voluptas saepe nulla nihil harum consectetur.</p>
-            </div>
-        </div>
-            
-            `)
-            const card = document.querySelector('.services-row');
- 
-            card.append(img)
+        //for(i = 0; i < cajitaTitle.length; i++){
+            //for(j = 0; j < cajitaTitle[i].length; i++){
+                const img = document.createRange().createContextualFragment(`
+                    
+                  <div class="cajita">
+                    <img src="${element.picture.large}" alt="">
+                    <div class="cajita-text">
+                        <h2>${element.name.first}</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sed sunt hic quas eum voluptas saepe nulla nihil harum consectetur.</p>
+                    </div>
+                </div>
+                    
+                    `)
+                    const card = document.querySelector('.services-row');
+                    card.append(img)
+            //}
+        //}
   
     });
 }
