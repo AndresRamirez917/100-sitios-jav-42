@@ -1,0 +1,93 @@
+#mainheader .navbar .logo {
+  float: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+#mainheader .navbar ul {
+  float: none;
+  text-align: center;
+  margin: 0 auto;
+}
+#mainheader .navbar ul li {
+  float: none;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+#showcase {
+  padding: 5rem;
+}
+#showcase h1 {
+  font-size: 2em;
+}
+#showcase p {
+  width: 100%;
+  text-align: center;
+}
+
+#reservation .reservation-content {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#reservation .reservation-content h2 {
+  margin-bottom: 1em;
+}
+
+#services .services-row {
+  display: block;
+}
+#services .services-row .box {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#about .about-row {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#about .about-row .about-text {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 100%;
+}
+#about .about-row .about-img {
+  text-align: center;
+  margin: 0 auto;
+}
+#about .about-row .about-img img {
+  width: 100%;
+}
+
+#opinions .opinions-row .card {
+  display: block;
+}
+#opinions .opinions-row .card img {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+#directions .directions-row {
+  display: block;
+}
+#directions .directions-row .box {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.box {
+  width: 400px;
+  height: 250px;
+  color: #fff;
+  padding: 50px;
+}/*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,136 @@
+#mainheader {
+
+    .navbar {
+
+        .logo {
+
+            float: none;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            margin-top: 1em;
+            margin-bottom: 2em;
+        }
+
+        ul {
+            float: none;
+            text-align: center;
+            margin: 0 auto;
+
+            li {
+                float: none;
+                display: inline-block;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+//showcase
+#showcase {
+    padding: 5rem;
+
+    h1 {
+        font-size:2em;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+//reservation
+#reservation {
+
+    .reservation-content {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+            h2 {
+                margin-bottom: 1em;
+            }
+    }
+}
+
+//services
+#services {
+
+    .services-row {
+        display: block;
+        
+        .box {
+            margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+        }
+    }
+   
+}
+
+//about
+#about {
+   
+    .about-row {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        
+
+        .about-text {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            width: 100%;
+      
+        }
+
+        .about-img {
+            text-align: center;
+            margin: 0 auto;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//opinions
+#opinions {
+
+    .opinions-row {
+        .card {
+            display: block;
+            img {
+                width: 20%;
+                margin: 0 auto;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+}
+
+//directions
+#directions {
+
+    .directions-row {
+        display: block;
+            .box {
+                margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+            }
+    }
+}
+
+.box {
+    
+    width: 400px;
+    height: 250px;
+    color: #fff;
+    padding: 50px;
+}
