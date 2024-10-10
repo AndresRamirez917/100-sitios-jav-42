@@ -57,5 +57,41 @@ const emailValido = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)
 }
 
+async function get1Data() {
+    const result = await fetch('https://randomuser.me/api?results=3');
+    const ranUser = await result.json();
+    console.log(ranUser)
+    ranUser.results.forEach(element => {
+        const img = document.createRange().createContextualFragment(`
+            
+          <div class="cajita">
+            <img src="${element.picture.large}" alt="">
+            <div class="cajita-text">
+                <h2>HONEYMOON ROOM</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sed sunt hic quas eum voluptas saepe nulla nihil harum consectetur.</p>
+            </div>
+        </div>
+            
+            `)
+            const card = document.querySelector('.services-row');
+ 
+            card.append(img)
+  
+    });
+}
+
+
+
+
+
+get1Data()
 getData()
 btn_validar.addEventListener("click", validar); 
+
+{/* <div class="cajita">
+<img src="" alt="">
+<div class="card-text">
+    <h2>HONEYMOON ROOM</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sed sunt hic quas eum voluptas saepe nulla nihil harum consectetur.</p>
+</div>
+</div> */}

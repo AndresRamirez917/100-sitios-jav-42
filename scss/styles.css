@@ -73,6 +73,20 @@ form .button-3 {
   color: #fff;
 }
 
+::-moz-placeholder {
+  font-family: "Font Awesome 5 free";
+  font-weight: 600;
+  content: "\f007";
+  text-align: right;
+}
+
+::placeholder {
+  font-family: "Font Awesome 5 free";
+  font-weight: 600;
+  content: "\f007";
+  text-align: right;
+}
+
 #mainheader .navbar .logo {
   float: left;
   margin: 1em 0;
@@ -142,6 +156,28 @@ form .button-3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#services .services-row .cajita {
+  width: 100%;
+  color: #fff;
+}
+#services .services-row .cajita img {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  filter: sepia(1);
+  padding: 1px;
+}
+#services .services-row .cajita .cajita-text {
+  font-size: 1rem;
+  position: relative;
+  margin-top: -220px;
+}
+#services .services-row .cajita .cajita-text p {
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 #about {
